@@ -10,7 +10,7 @@
 @section('content')
 
 <!-- Hero Section with Parallax Effect and Video Background -->
-<div class="relative overflow-hidden bg-gradient-to-br from-[#0a1f31] via-[#1a3a52] to-[#0a1f31] text-white py-24 md:py-32 lg:py-40" id="heroSection">
+<div class="relative overflow-hidden bg-gradient-to-br from-[#0a1f31] via-[#1a3a52] to-[#0a1f31] text-white py-12 sm:py-20 md:py-32 lg:py-40" id="heroSection">
     <!-- Animated Background Pattern with Enhanced Overlay -->
     <div class="absolute inset-0 opacity-[0.03]">
         <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;80&quot; height=&quot;80&quot; viewBox=&quot;0 0 80 80&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z&quot; /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -18,61 +18,61 @@
 
     <!-- Enhanced Decorative Gradient Orbs with More Animations -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-yellow-400/25 to-orange-500/15 rounded-full blur-3xl animate-float"></div>
-        <div class="absolute top-1/3 -right-40 w-[700px] h-[700px] bg-gradient-to-bl from-blue-400/20 to-cyan-500/10 rounded-full blur-3xl animate-float-delayed"></div>
-        <div class="absolute -bottom-32 left-1/4 w-[500px] h-[500px] bg-gradient-to-tr from-yellow-300/25 to-amber-500/15 rounded-full blur-3xl animate-float-slow"></div>
-        <div class="absolute top-1/2 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-400/15 to-pink-500/10 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute -top-20 -left-20 sm:-top-32 sm:-left-32 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-gradient-to-br from-yellow-400/25 to-orange-500/15 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute top-1/3 -right-20 sm:-right-40 w-[350px] sm:w-[700px] h-[350px] sm:h-[700px] bg-gradient-to-bl from-blue-400/20 to-cyan-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div class="absolute -bottom-20 sm:-bottom-32 left-1/4 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] bg-gradient-to-tr from-yellow-300/25 to-amber-500/15 rounded-full blur-3xl animate-float-slow"></div>
+        <div class="absolute top-1/2 right-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-gradient-to-r from-purple-400/15 to-pink-500/10 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
     </div>
 
     <!-- Enhanced Floating Sparkle Elements -->
-    <div class="absolute top-20 left-[10%] w-3 h-3 bg-yellow-400 rounded-full animate-pulse shadow-lg shadow-yellow-400/50"></div>
-    <div class="absolute top-40 right-[15%] w-2 h-2 bg-blue-300 rounded-full animate-pulse shadow-lg shadow-blue-300/50" style="animation-delay: 0.5s;"></div>
-    <div class="absolute bottom-48 left-[20%] w-3 h-3 bg-yellow-300 rounded-full animate-pulse shadow-lg shadow-yellow-300/50" style="animation-delay: 1s;"></div>
-    <div class="absolute top-56 right-[30%] w-1.5 h-1.5 bg-white rounded-full animate-pulse shadow-lg shadow-white/50" style="animation-delay: 1.5s;"></div>
-    <div class="absolute bottom-32 right-[25%] w-2.5 h-2.5 bg-orange-400 rounded-full animate-pulse shadow-lg shadow-orange-400/50" style="animation-delay: 2s;"></div>
-    <div class="absolute top-1/3 left-[35%] w-2 h-2 bg-purple-400 rounded-full animate-pulse shadow-lg shadow-purple-400/50" style="animation-delay: 2.5s;"></div>
+    <div class="absolute top-10 left-[5%] sm:top-20 sm:left-[10%] w-2 sm:w-3 h-2 sm:h-3 bg-yellow-400 rounded-full animate-pulse shadow-lg shadow-yellow-400/50"></div>
+    <div class="absolute top-24 right-[10%] sm:top-40 sm:right-[15%] w-1.5 sm:w-2 h-1.5 sm:h-2 bg-blue-300 rounded-full animate-pulse shadow-lg shadow-blue-300/50" style="animation-delay: 0.5s;"></div>
+    <div class="absolute bottom-32 left-[15%] sm:bottom-48 sm:left-[20%] w-2 sm:w-3 h-2 sm:h-3 bg-yellow-300 rounded-full animate-pulse shadow-lg shadow-yellow-300/50" style="animation-delay: 1s;"></div>
+    <div class="absolute top-40 right-[20%] sm:top-56 sm:right-[30%] w-1 sm:w-1.5 h-1 sm:h-1.5 bg-white rounded-full animate-pulse shadow-lg shadow-white/50" style="animation-delay: 1.5s;"></div>
+    <div class="absolute bottom-24 right-[20%] sm:bottom-32 sm:right-[25%] w-2 sm:w-2.5 h-2 sm:h-2.5 bg-orange-400 rounded-full animate-pulse shadow-lg shadow-orange-400/50" style="animation-delay: 2s;"></div>
+    <div class="absolute top-1/3 left-[30%] sm:left-[35%] w-1.5 sm:w-2 h-1.5 sm:h-2 bg-purple-400 rounded-full animate-pulse shadow-lg shadow-purple-400/50" style="animation-delay: 2.5s;"></div>
 
     <div class="container-max relative z-10">
-        <div class="max-w-5xl mx-auto text-center px-4">
+        <div class="max-w-5xl mx-auto text-center px-3 sm:px-4 md:px-6 lg:px-4">
             <!-- Animated Badge -->
-            <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-400/20 to-yellow-500/10 backdrop-blur-md rounded-full mb-8 border border-yellow-400/30 shadow-lg shadow-yellow-500/10 opacity-0 animate-slide-down">
+            <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-400/20 to-yellow-500/10 backdrop-blur-md rounded-full mb-6 sm:mb-8 border border-yellow-400/30 shadow-lg shadow-yellow-500/10 opacity-0 animate-slide-down">
                 <svg class="w-5 h-5 text-yellow-400 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                 </svg>
                 <span class="text-sm font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Explore Gujarat's Hidden Gems</span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 leading-[1.1] opacity-0 animate-fade-in">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-4 sm:mb-6 leading-[1.1] opacity-0 animate-fade-in">
                 <span class="block text-white drop-shadow-2xl">Discover Amazing</span>
                 <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 drop-shadow-xl animate-gradient">
                     Tour Packages
                 </span>
             </h1>
             
-            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed opacity-0 animate-fade-in-delayed max-w-3xl mx-auto font-light">
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 sm:mb-12 leading-relaxed opacity-0 animate-fade-in-delayed max-w-3xl mx-auto font-light">
                 Experience the spiritual, cultural, and natural wonders of Gujarat with our expertly curated tour packages
             </p>
 
             <!-- Stats with Enhanced Design -->
-            <div class="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12 max-w-3xl mx-auto opacity-0 animate-slide-up mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 lg:gap-12 max-w-3xl mx-auto opacity-0 animate-slide-up mb-12 sm:mb-16">
                 <div class="relative group">
                     <div class="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-orange-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                     <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-                        <div class="text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">15+</div>
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">15+</div>
                         <div class="text-xs md:text-sm text-gray-300 font-semibold">Destinations</div>
                     </div>
                 </div>
                 <div class="relative group">
                     <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-cyan-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                     <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-                        <div class="text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">500+</div>
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">500+</div>
                         <div class="text-xs md:text-sm text-gray-300 font-semibold">Happy Tourists</div>
                     </div>
                 </div>
                 <div class="relative group">
                     <div class="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-amber-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                     <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-                        <div class="text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">4.9★</div>
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-br from-yellow-400 to-yellow-200 bg-clip-text text-transparent mb-2">4.9★</div>
                         <div class="text-xs md:text-sm text-gray-300 font-semibold">Rating</div>
                     </div>
                 </div>
@@ -85,28 +85,28 @@
 <section class="py-12 sm:py-16 md:py-24 bg-white">
     <div class="container-max">
         <!-- Section Header -->
-        <div class="text-center mb-8 sm:mb-12 px-4 sm:px-0">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full mb-4">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 px-3 sm:px-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full mb-3 sm:mb-4">
                 <svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                 </svg>
                 <span class="text-sm font-bold text-[#1a3a52]">Popular Destinations</span>
             </div>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a3a52] mb-3 sm:mb-4">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-[#1a3a52] mb-2 sm:mb-3">
                 Explore Amazing Places
             </h2>
-            <p class="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+            <p class="text-xs sm:text-sm md:text-base text-gray-600 max-w-3xl mx-auto">
                 Discover India's most beautiful destinations from vibrant cities to heritage sites
             </p>
         </div>
 
         <!-- Destinations Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-6 px-3 sm:px-0">
             
             <!-- Mumbai -->
             <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-48 sm:h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=600&q=80" 
+                    <img src="{{ asset('images/tours/mumbai-gateway.jpg') }}" 
                          alt="Mumbai" 
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute top-4 left-4 px-3 py-1.5 bg-purple-500 text-white text-xs font-bold rounded-full shadow-lg">
@@ -119,7 +119,7 @@
                         <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                         </svg>
-                        <span class="font-semibold">450 km away</span>
+                        <span class="font-semibold">830 km away</span>
                     </div>
                     
                     <h3 class="text-lg sm:text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Mumbai</h3>
@@ -145,7 +145,7 @@
             <!-- Udaipur -->
             <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-48 sm:h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?w=600&q=80" 
+                    <img src="{{ asset('images/tours/udaipur-lakes.jpg') }}" 
                          alt="Udaipur" 
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute top-4 left-4 px-3 py-1.5 bg-pink-500 text-white text-xs font-bold rounded-full shadow-lg">
@@ -158,7 +158,7 @@
                         <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                         </svg>
-                        <span class="font-semibold">380 km away</span>
+                        <span class="font-semibold">420 km away</span>
                     </div>
                     
                     <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Udaipur</h3>
@@ -184,7 +184,7 @@
             <!-- Agra -->
             <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-48 sm:h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80" 
+                    <img src="{{ asset('images/tours/agra-tajmahal.jpg') }}" 
                          alt="Agra" 
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute top-4 left-4 px-3 py-1.5 bg-amber-500 text-white text-xs font-bold rounded-full shadow-lg">
@@ -197,7 +197,7 @@
                         <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                         </svg>
-                        <span class="font-semibold">920 km away</span>
+                        <span class="font-semibold">1050 km away</span>
                     </div>
                     
                     <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Agra</h3>
@@ -223,7 +223,7 @@
             <!-- Goa -->
             <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-48 sm:h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" 
+                    <img src="{{ asset('images/tours/goa-beach.jpg') }}" 
                          alt="Goa" 
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute top-4 left-4 px-3 py-1.5 bg-teal-500 text-white text-xs font-bold rounded-full shadow-lg">
@@ -236,7 +236,7 @@
                         <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                         </svg>
-                        <span class="font-semibold">620 km away</span>
+                        <span class="font-semibold">630 km away</span>
                     </div>
                     
                     <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Goa</h3>
@@ -267,19 +267,19 @@
 <section class="py-12 sm:py-16 md:py-24 bg-gray-50">
     <div class="container-max">
         <!-- Section Header -->
-        <div class="text-center mb-8 sm:mb-12 px-4 sm:px-0">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a3a52] mb-3 sm:mb-4">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 px-3 sm:px-0">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-[#1a3a52] mb-2 sm:mb-3">
                 Gujarat's Best <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">Tour Packages</span>
             </h2>
-            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            <p class="text-xs sm:text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
                 Experience spiritual heritage, wildlife adventures & scenic beauty
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0" id="toursGrid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 px-3 sm:px-0" id="toursGrid">
             
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800',
+                'image' => asset('images/tours/dwarka-temple.jpg'),
                 'title' => 'Dwarka - Krishna\'s Sacred City',
                 'description' => 'Explore the legendary ancient city of Lord Krishna, one of the Char Dham pilgrimage sites with magnificent temples and spiritual heritage.',
                 'duration' => '1 Day',
@@ -299,7 +299,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/somnath-jyotirlinga.jpg'),
                 'title' => 'Somnath - First Jyotirlinga',
                 'description' => 'Visit the magnificent Somnath Temple on the Arabian Sea coast, first among 12 Jyotirlingas, destroyed and rebuilt 17 times through history.',
                 'duration' => '1 Day',
@@ -320,7 +320,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1534567110243-4ec9d01e8410?w=800',
+                'image' => asset('images/tours/gir-lion-safari.jpg'),
                 'title' => 'Gir National Park - Lion Safari',
                 'description' => 'Only place on Earth to see Asiatic Lions in the wild. Home to 600+ lions across 1,400 sq km protected forest with rich biodiversity.',
                 'duration' => '1 Day',
@@ -341,7 +341,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/gir-track.jpg'),
                 'title' => 'Girnar Mountain Trek',
                 'description' => 'Sacred peak with 10,000 steps to ancient Jain & Hindu temples. Challenging pilgrimage trek with ropeway option and breathtaking views.',
                 'duration' => '1 Day',
@@ -360,11 +360,11 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800',
+                'image' => asset('images/tours/statue-of-unity.jpg'),
                 'title' => 'Statue of Unity',
                 'description' => 'World\'s tallest statue at 182m dedicated to Sardar Patel. Iconic monument with museum, valley of flowers, and panoramic viewing gallery.',
                 'duration' => '1 Day',
-                'distance' => '210 km',
+                'distance' => '375 km',
                 'category' => 'adventure',
                 'badge' => '4.9',
                 'highlights' => [
@@ -379,11 +379,11 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+                'image' => asset('images/tours/saputara-hill.jpg'),
                 'title' => 'Saputara Hill Station',
                 'description' => 'Gujarat\'s only hill station nestled in Sahyadri ranges at 1,000m. Pleasant climate, waterfalls, tribal culture, and scenic beauty.',
                 'duration' => '2 Days',
-                'distance' => '385 km',
+                'distance' => '460 km',
                 'category' => 'weekend',
                 'badge' => '4.7',
                 'highlights' => [
@@ -398,7 +398,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800',
+                'image' => asset('images/tours/kutch-desert.jpg'),
                 'title' => 'Rann of Kutch - White Desert',
                 'description' => 'World\'s largest salt desert spanning 7,500 sq km. Experience the surreal white landscape, vibrant culture, and stunning sunsets.',
                 'duration' => '2 Days',
@@ -417,7 +417,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/coastal-drive.jpg'),
                 'title' => 'Diu - Portuguese Paradise',
                 'description' => 'Coastal town with Portuguese architecture, pristine beaches, historic forts, and relaxed island vibes perfect for weekend getaway.',
                 'duration' => '2 Days',
@@ -436,7 +436,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/Ahmedabad-Heritage.jpg'),
                 'title' => 'Ahmedabad Heritage Walk',
                 'description' => 'India\'s first UNESCO World Heritage City. Explore Sabarmati Ashram, old city pols, textile museums, and vibrant street food culture.',
                 'duration' => '1 Day',
@@ -455,7 +455,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/gir-forest.jpg'),
                 'title' => 'Palitana - Jain Temple City',
                 'description' => 'Holiest Jain pilgrimage with 863 marble temples atop Shatrunjaya hills. Climb 3,500 steps to witness architectural splendor.',
                 'duration' => '1 Day',
@@ -474,7 +474,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/Champaner-Pavagadh.jpg'),
                 'title' => 'Champaner-Pavagadh',
                 'description' => 'UNESCO World Heritage Site combining Hindu and Islamic architecture. Ancient hill fortress with temples, mosques, and stunning views.',
                 'duration' => '1 Day',
@@ -493,7 +493,7 @@
             ])
 
             @include('partials.tour-card', [
-                'image' => 'https://images.unsplash.com/photo-1609920658906-8223610809ca?w=800',
+                'image' => asset('images/tours/coastal-drive.jpg'),
                 'title' => 'Patan - Rani ki Vav Stepwell',
                 'description' => 'UNESCO World Heritage stepwell, an architectural marvel from 11th century. Intricate carvings depicting mythology and daily life.',
                 'duration' => '1 Day',

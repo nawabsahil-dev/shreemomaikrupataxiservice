@@ -86,7 +86,7 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-nav" class="mobile-nav">
+        <div id="mobile-nav" class="mobile-nav hidden">
             <ul>
                 <li><a href="/" class="mobile-nav-link"><span class="mobile-nav-icon">🏠</span> HOME</a></li>
                 <li><a href="/tours" class="mobile-nav-link"><span class="mobile-nav-icon">🗺️</span> PLACES</a></li>
@@ -102,7 +102,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                     </svg>
                 </a>
-            </d
+            </div>
         </div>
     </nav>
 </header>

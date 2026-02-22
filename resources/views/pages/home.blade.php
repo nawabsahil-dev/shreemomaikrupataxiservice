@@ -9,7 +9,7 @@
 
 @section('content')
 <!-- Hero Section: Route Map Theme -->
-<section class="hero-section home-hero with-bg-image" style="--hero-bg-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80');">
+<section class="hero-section home-hero with-bg-image" style="--hero-bg-image: url('{{ asset('images/tours/coastal-drive.jpg') }}');">
     <div class="hero-map-overlay"></div>
     <div class="hero-glow hero-glow-left"></div>
     <div class="hero-glow hero-glow-right"></div>
@@ -714,118 +714,184 @@
     </div>
 </section>
 
-<!-- Destination Highlights -->
-<section class="home-section">
+<!-- Popular Destinations Section -->
+<section class="py-12 sm:py-16 md:py-24 bg-white">
     <div class="container-max">
-        <div class="section-header" data-aos="fade-up">
-            <span class="section-tag">Destination Highlights</span>
-            <h2 class="section-title">Go Beyond Jamnagar With Curated Escapes</h2>
-            <p class="section-subtitle">We cover iconic spiritual, coastal, and heritage routes.</p>
+        <!-- Section Header -->
+        <div class="text-center mb-8 sm:mb-12 px-4 sm:px-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full mb-4">
+                <svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-bold text-[#1a3a52]">Popular Destinations</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a3a52] mb-3 sm:mb-4">
+                Explore Amazing Places
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+                Discover Gujarat's best cities and heritage sites
+            </p>
         </div>
 
-        <div class="destination-grid">
-            <article class="destination-card" data-aos="fade-up">
-                <div class="destination-image">
-                    <img data-src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=80" src="{{ asset('assets/images/hero-1.svg') }}" alt="Dwarka Temple">
-                    <div class="destination-overlay">
-                        <a href="/tours" class="destination-btn">View Route</a>
+        <!-- Destinations Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+            
+            <!-- Ahmedabad -->
+            <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-48 sm:h-56 overflow-hidden">
+                    <img src="{{ asset('images/tours/dwarka-temple-alt.jpg') }}" 
+                         alt="Ahmedabad" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-4 left-4 px-3 py-1.5 bg-orange-500 text-white text-xs font-bold rounded-full shadow-lg">
+                        Heritage Hub
                     </div>
                 </div>
-                <div class="destination-body">
-                    <h3>Dwarka Spiritual Loop</h3>
-                    <p>Premium day trip with guided stops and return timing.</p>
-                </div>
-            </article>
-            <article class="destination-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="destination-image">
-                    <img data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80" src="{{ asset('assets/images/hero-2.svg') }}" alt="Coastal Drive">
-                    <div class="destination-overlay">
-                        <a href="/tours" class="destination-btn">View Route</a>
+                
+                <div class="p-5">
+                    <div class="flex items-center gap-2 text-gray-500 text-xs mb-2">
+                        <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold">290 km away</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Ahmedabad</h3>
+                    <p class="text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-2">UNESCO World Heritage City with Gandhi's Ashram and old city heritage</p>
+                    
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-1 text-gray-700">
+                            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span class="text-sm font-semibold">4.7 Rating</span>
+                        </div>
+                        <a href="/tours" class="inline-flex items-center gap-1 text-sm font-bold text-yellow-600 hover:text-yellow-700 transition-colors">
+                            <span>View Tours</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="destination-body">
-                    <h3>Coastal Drive</h3>
-                    <p>Golden hour rides with scenic breaks.</p>
-                </div>
-            </article>
-            <article class="destination-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="destination-image">
-                    <img data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80" src="{{ asset('assets/images/hero-3.svg') }}" alt="Gir Forest">
-                    <div class="destination-overlay">
-                        <a href="/tours" class="destination-btn">View Route</a>
-                    </div>
-                </div>
-                <div class="destination-body">
-                    <h3>Gir Forest Gateway</h3>
-                    <p>Flexible return options for wildlife safaris.</p>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
+            </div>
 
-<!-- Tour Spotlight -->
-<section class="home-section tour-section">
-    <div class="container-max">
-        <div class="section-header" data-aos="fade-up">
-            <span class="section-tag">Tour Spotlight</span>
-            <h2 class="section-title">Handpicked Journeys For Every Mood</h2>
-            <p class="section-subtitle">From sacred routes to coastal escapes, explore our most loved day trips.</p>
-        </div>
-
-        <div class="tour-grid">
-            <article class="tour-card" data-aos="fade-up">
-                <div class="tour-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80" alt="Dwarka - Bet Dwarka Tour">
-                    <span class="tour-badge">Full Day</span>
-                </div>
-                <div class="tour-body">
-                    <div class="tour-meta">Dwarka - Bet Dwarka</div>
-                    <h3>Temple & Coastline Circuit</h3>
-                    <p>Includes ferry timing, guided stops, and a smooth return by sunset.</p>
-                    <div class="tour-footer">
-                        <div class="tour-price">From ₹2,800</div>
-                        <a href="/tours" class="btn-outline">View Tour</a>
+            <!-- Surat -->
+            <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-48 sm:h-56 overflow-hidden">
+                    <img src="{{ asset('images/tours/coastal-drive.jpg') }}" 
+                         alt="Surat" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-4 left-4 px-3 py-1.5 bg-green-500 text-white text-xs font-bold rounded-full shadow-lg">
+                        Business City
                     </div>
                 </div>
-            </article>
-
-            <article class="tour-card" data-aos="fade-up" data-aos-delay="120">
-                <div class="tour-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80" alt="Somnath Weekend Escape">
-                    <span class="tour-badge">2 Days</span>
-                </div>
-                <div class="tour-body">
-                    <div class="tour-meta">Somnath + Veraval</div>
-                    <h3>Weekend Devotional Escape</h3>
-                    <p>Stay-ready planning with hotel pickup and early morning darshan slots.</p>
-                    <div class="tour-footer">
-                        <div class="tour-price">From ₹5,200</div>
-                        <a href="/tours" class="btn-outline">View Tour</a>
+                
+                <div class="p-5">
+                    <div class="flex items-center gap-2 text-gray-500 text-xs mb-2">
+                        <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold">240 km away</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Surat</h3>
+                    <p class="text-sm text-gray-600 mb-4 line-clamp-2">Diamond city with textile heritage and modern attractions</p>
+                    
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-1 text-gray-700">
+                            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span class="text-sm font-semibold">4.6 Rating</span>
+                        </div>
+                        <a href="/tours" class="inline-flex items-center gap-1 text-sm font-bold text-yellow-600 hover:text-yellow-700 transition-colors">
+                            <span>View Tours</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="tour-card" data-aos="fade-up" data-aos-delay="240">
-                <div class="tour-image-wrap">
-                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=80" alt="Gir Safari Day Trip">
-                    <span class="tour-badge">Wildlife</span>
-                </div>
-                <div class="tour-body">
-                    <div class="tour-meta">Gir National Park</div>
-                    <h3>Safari Day Trip</h3>
-                    <p>We handle permits, pickup windows, and return logistics for a stress-free safari.</p>
-                    <div class="tour-footer">
-                        <div class="tour-price">From ₹3,900</div>
-                        <a href="/tours" class="btn-outline">View Tour</a>
+            <!-- Vadodara -->
+            <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-48 sm:h-56 overflow-hidden">
+                    <img src="{{ asset('images/tours/statue-of-unity.jpg') }}" 
+                         alt="Vadodara" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-4 left-4 px-3 py-1.5 bg-purple-500 text-white text-xs font-bold rounded-full shadow-lg">
+                        Cultural Hub
                     </div>
                 </div>
-            </article>
-        </div>
+                
+                <div class="p-5">
+                    <div class="flex items-center gap-2 text-gray-500 text-xs mb-2">
+                        <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold">365 km away</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Vadodara</h3>
+                    <p class="text-sm text-gray-600 mb-4 line-clamp-2">Royal city with palaces, museums and cultural heritage</p>
+                    
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-1 text-gray-700">
+                            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span class="text-sm font-semibold">4.8 Rating</span>
+                        </div>
+                        <a href="/tours" class="inline-flex items-center gap-1 text-sm font-bold text-yellow-600 hover:text-yellow-700 transition-colors">
+                            <span>View Tours</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="tour-cta" data-aos="fade-up">
-            <a href="/tours" class="btn-primary">Browse All Tours</a>
-            <a href="/booking" class="btn-accent">Customize My Route</a>
+            <!-- Kutch (Bhuj) -->
+            <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-48 sm:h-56 overflow-hidden">
+                    <img src="{{ asset('images/tours/kutch-desert.jpg') }}" 
+                         alt="Kutch" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-4 left-4 px-3 py-1.5 bg-rose-500 text-white text-xs font-bold rounded-full shadow-lg">
+                        Desert Wonder
+                    </div>
+                </div>
+                
+                <div class="p-5">
+                    <div class="flex items-center gap-2 text-gray-500 text-xs mb-2">
+                        <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold">340 km away</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-[#1a3a52] mb-2 group-hover:text-yellow-600 transition-colors">Kutch</h3>
+                    <p class="text-sm text-gray-600 mb-4 line-clamp-2">White desert, vibrant culture and artisan heritage</p>
+                    
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-1 text-gray-700">
+                            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span class="text-sm font-semibold">4.9 Rating</span>
+                        </div>
+                        <a href="/tours" class="inline-flex items-center gap-1 text-sm font-bold text-yellow-600 hover:text-yellow-700 transition-colors">
+                            <span>View Tours</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

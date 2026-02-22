@@ -12,6 +12,14 @@ class HeaderManager {
         this.lastScrollPosition = 0;
         this.isScrollingDown = false;
         
+        // Debug log
+        console.log('HeaderManager initialized:', {
+            mobileMenuBtn: !!this.mobileMenuBtn,
+            mobileNav: !!this.mobileNav,
+            navMenu: !!this.navMenu,
+            header: !!this.header
+        });
+        
         this.init();
     }
 
@@ -37,6 +45,7 @@ class HeaderManager {
         // Toggle menu on button click
         this.mobileMenuBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            e.stopPropagation();
             this.toggleMobileMenu();
         });
 
@@ -48,9 +57,14 @@ class HeaderManager {
             });
         });
 
-        // Close menu when clicking outside
+        // Close menu when clicking outside header
         document.addEventListener('click', (e) => {
-            if (!this.header.contains(e.target)) {
+            const isClickInsideHeader = this.header.contains(e.target);
+            const isClickOnButton = this.mobileMenuBtn.contains(e.target);
+            const isClickInMenu = this.mobileNav.contains(e.target);
+            
+            // Only close if click is outside header, button, AND menu
+            if (!isClickInsideHeader && !isClickOnButton && !isClickInMenu) {
                 this.closeMobileMenu();
             }
         });
@@ -67,11 +81,11 @@ class HeaderManager {
      * Toggle mobile menu visibility
      */
     toggleMobileMenu() {
-        const isHidden = this.mobileNav.classList.contains('hidden');
-        if (isHidden) {
-            this.openMobileMenu();
-        } else {
+        const isActive = this.mobileNav.classList.contains('active');
+        if (isActive) {
             this.closeMobileMenu();
+        } else {
+            this.openMobileMenu();
         }
     }
 
@@ -79,30 +93,35 @@ class HeaderManager {
      * Open mobile menu with animation
      */
     openMobileMenu() {
-        this.mobileNav.classList.remove('hidden');
         this.mobileNav.classList.add('active');
+        this.mobileNav.classList.remove('hidden');
         
         // Add aria attributes for accessibility
         this.mobileMenuBtn.setAttribute('aria-expanded', 'true');
         this.mobileMenuBtn.setAttribute('aria-label', 'Close navigation menu');
         
-        // Prevent body scroll when menu is open
+        // Prevent body scroll when menu is open - fix layout shift
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
         document.body.style.overflow = 'hidden';
+        document.body.style.paddingRight = scrollbarWidth + 'px';
+        this.header.style.paddingRight = scrollbarWidth + 'px';
     }
 
     /**
      * Close mobile menu
      */
     closeMobileMenu() {
-        this.mobileNav.classList.add('hidden');
         this.mobileNav.classList.remove('active');
+        this.mobileNav.classList.add('hidden');
         
         // Add aria attributes for accessibility
         this.mobileMenuBtn.setAttribute('aria-expanded', 'false');
         this.mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
         
-        // Restore body scroll
+        // Restore body scroll and remove padding
         document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        this.header.style.paddingRight = '';
     }
 
     /**
