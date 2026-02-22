@@ -81,7 +81,14 @@ class HeaderManager {
      * Toggle mobile menu visibility
      */
     toggleMobileMenu() {
+        if (!this.mobileNav) {
+            console.error('Mobile nav element not found');
+            return;
+        }
+        
         const isActive = this.mobileNav.classList.contains('active');
+        console.log('toggleMobileMenu called. Current state:', { isActive });
+        
         if (isActive) {
             this.closeMobileMenu();
         } else {
